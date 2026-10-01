@@ -1,0 +1,8 @@
+STACKFIVE — FRAMEWORKBULMA
+
+Abra index.html para iniciar o portfólio.
+
+Páginas dos membros: dilsio.html, larrissa.html, osvaldo.html, idelson.html e angelo.html.
+Framework usado: Bulma (css/bulma.min.css).
+
+A página do líder mantém o CV e o formulário de contacto.

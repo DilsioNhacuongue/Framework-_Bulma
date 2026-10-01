@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StackFive — Trabalho de Programação Web</title>
+<link rel="stylesheet" href="css/bulma.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<nav class="navbar sf-navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item sf-brand" href="index.html">Stack<span>Five</span></a>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#equipa">Equipa</a>
+        <a class="navbar-item" href="#bulma">Sobre o Bulma</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="home-hero" id="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <p class="tag-line hero-fade" style="--i:0">Programação Web · UTDEG · Licenciatura em Informática</p>
+        <h1 class="mt-2" id="heroTitle">Cinco pessoas, um só projeto.</h1>
+        <p class="mt-4 hero-fade" style="--i:1">Somos a StackFive: um grupo de cinco elementos, cada um com a sua área de especialização
+          dentro da Informática, a apresentar o trabalho da cadeira de Programação Web. Esta página foi construída
+          com o framework <strong>Bulma</strong> — mais abaixo explicamos porquê.</p>
+        <a href="#equipa" class="button is-primary mt-5 hero-fade magnetic" style="--i:2"><span>Ver a equipa</span></a>
+        <div class="moving-message home-moving mt-5 hero-fade" style="--i:3"><span>✦ Cibersegurança &nbsp; • &nbsp; UI/UX &nbsp; • &nbsp; Backend &nbsp; • &nbsp; Redes &amp; DevOps &nbsp; • &nbsp; Inteligência Artificial &nbsp; • &nbsp; Programação Web &nbsp; • &nbsp;</span></div>
+      </div>
+      <div class="column is-6">
+        <div class="hero-stage" id="heroStage" role="img" aria-label="Cinco pontos ligados entre si: Dilsio (Cibersegurança e Redes), Larrissa (UI/UX), Osvaldo (Backend), Idelson (Redes e DevOps) e Àngelo (Inteligência Artificial)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="equipa" class="team-grid">
+  <div class="container">
+    <h2 class="title is-4" data-split>A equipa</h2>
+    <p class="mb-5" style="color:var(--muted);">Cada elemento tem a sua própria página, com CV, contactos e área de especialização.</p>
+    <div class="columns is-multiline">
+
+      <div class="column is-4">
+        <a class="team-card" data-member="dilsio" style="--card-accent:#1C7C74" href="dilsio.html">
+          <img class="team-area-thumb" src="assets/area-ciberseg.svg" alt="Cibersegurança e Redes">
+          <p class="role">Cibersegurança &amp; Redes</p>
+          <h3 class="title is-5 mb-1">Dilsio Nhacuongue</h3>
+          <p style="color:var(--muted);font-size:0.92rem;">Análise de vulnerabilidades, videovigilância e o TCC NetGuard AI.</p>
+          <span class="leader-mark"><svg class="icon-inline" viewBox="0 0 24 24" fill="#D4A24C" stroke="none"><path d="M12 2.5l2.9 6 6.6.6-5 4.4 1.5 6.5L12 16.8l-5.9 3.2L7.5 13.5l-5-4.4 6.6-.6z"/></svg> Líder de grupo</span>
+        </a>
+      </div>
+
+      <div class="column is-4">
+        <a class="team-card" data-member="larrissa" style="--card-accent:#A8477A" href="larrissa.html">
+          <img class="team-area-thumb real-home-thumb" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/UI_%26_UX_Design.jpg" onerror="this.onerror=null;this.src='assets/area-uiux.svg';" alt="UI/UX Design">
+          <p class="role">UI/UX Design</p>
+          <h3 class="title is-5 mb-1">Larrissa</h3>
+          <p style="color:var(--muted);font-size:0.92rem;">Desenho de interfaces e experiência do utilizador.</p>
+        </a>
+      </div>
+
+      <div class="column is-4">
+        <a class="team-card" data-member="osvaldo" style="--card-accent:#3E5C99" href="osvaldo.html">
+          <img class="team-area-thumb real-home-thumb" src="https://upload.wikimedia.org/wikipedia/commons/7/74/Servers_in_a_Rack.jpg" onerror="this.onerror=null;this.src='assets/area-backend.svg';" alt="Backend e Bases de Dados">
+          <p class="role">Backend &amp; Bases de Dados</p>
+          <h3 class="title is-5 mb-1">Osvaldo</h3>
+          <p style="color:var(--muted);font-size:0.92rem;">Lógica de servidor, APIs e modelação de dados.</p>
+        </a>
+      </div>
+
+      <div class="column is-4">
+        <a class="team-card" data-member="idelson" style="--card-accent:#9C5330" href="idelson.html">
+          <img class="team-area-thumb real-home-thumb" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Technician_with_laptop_working_on_server_rack_at_NERSC.jpg" onerror="this.onerror=null;this.src='assets/area-redes.svg';" alt="Redes e DevOps — infraestrutura de servidores">
+          <p class="role">Redes &amp; DevOps</p>
+          <h3 class="title is-5 mb-1">Idelson</h3>
+          <p style="color:var(--muted);font-size:0.92rem;">Infraestrutura, redes e ambientes de implantação.</p>
+        </a>
+      </div>
+
+      <div class="column is-4">
+        <a class="team-card" data-member="angelo" style="--card-accent:#6C4F9E" href="angelo.html">
+          <img class="team-area-thumb real-home-thumb" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Human-robot.jpg" onerror="this.onerror=null;this.src='assets/area-ia.svg';" alt="Inteligência Artificial">
+          <p class="role">Inteligência Artificial</p>
+          <h3 class="title is-5 mb-1">Àngelo</h3>
+          <p style="color:var(--muted);font-size:0.92rem;">Modelos de dados e aprendizagem automática.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="bulma" class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="framework-note" data-reveal>
+          <h2 class="title is-5" data-split>Porque usámos o Bulma</h2>
+          <p>Escolhemos o <strong>Bulma</strong> para este trabalho por ser um framework CSS moderno que não depende
+            de JavaScript para funcionar — as classes tratam do layout (colunas, cartões, navbar, botões) e nós
+            concentramo-nos no conteúdo e na identidade visual de cada página. Isso tornou mais fácil manter as
+            seis páginas do site consistentes entre si, sem repetir regras de CSS básicas em cada uma.</p>
+          <p class="mt-3">Em concreto, usámos os componentes <code>columns</code>, <code>card</code>,
+            <code>navbar</code>, <code>hero</code>, <code>tag</code> e <code>button</code>, e ajustámos as cores e
+            tipografia por cima através das variáveis CSS do Bulma 1.x, sem precisar de recompilar nada em Sass.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="sf-footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <p style="font-family:var(--font-display);font-weight:700;color:#fff;">StackFive</p>
+        <p>Trabalho de Programação Web · UTDEG, Av. das Indústrias</p>
+      </div>
+      <div class="column has-text-right-tablet">
+        <p>&copy; <span class="current-year"></span> Grupo StackFive</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
